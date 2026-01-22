@@ -1,128 +1,77 @@
-# MetaExchange — Layer di scambio tracciato (Hermeticum B.C.E.)
-
-MetaExchange è il **nodo BCE** dedicato allo **scambio tracciato**:
-ogni trasferimento di dato, valore o diritto è registrato, verificabile e opponibile.
+# MetaExchange — Tracked Exchange Layer
+## Scambio tracciato · Evidenza · Verifica (UE / Horizon)
 
 ---
 
-## Nodi Pubblici (GitHub Pages)
+## Cos’è MetaExchange
+**MetaExchange** è il layer di **scambio tracciato** dell’ecosistema **Hermeticum B.C.E.**  
+Registra e organizza scambi e interazioni rendendoli **verificabili nel tempo**.
 
-- **MetaExchange (Pages)**  
-  https://manuelcoletta1-source.github.io/metaexchange/
-
-- **Services (HUB)**  
-  https://manuelcoletta1-source.github.io/hermeticum-bce-services/
-
-- **Technology**  
-  https://manuelcoletta1-source.github.io/Hermeticum-B.C.E.-Technology/
+MetaExchange **non è un marketplace**.  
+È un **layer tecnico** per collegare scambio → evidenza → tempo.
 
 ---
 
-## Scopo
+## Perché serve
+Negli ecosistemi digitali complessi il problema non è solo “scambiare”, ma:
+- dimostrare condizioni e responsabilità
+- mantenere integrità e continuità
+- rendere lo scambio auditabile nel tempo
 
-- Tracciare scambi e interazioni
-- Collegare scambio → evidenza → tempo
-- Garantire auditabilità
-- Integrare validità (UNEBDO) e opponibilità (OPC)
-
----
-
-## Struttura consigliata del repo
-
-- `/index.html` — pagina pubblica
-- `/schemas/` — modelli di scambio
-- `/records/` — registrazioni e hash
-- `/verification/` — controlli e audit
-- `/docs/` — specifiche tecniche
+MetaExchange esiste per evitare che lo scambio diventi
+un atto non verificabile o non opponibile.
 
 ---
 
-## Relazioni BCE
-
-- **UNEBDO** → validità
-- **OPC** → opponibilità
-- **MetaExchange** → tracciamento
-- **GitJoker-C2** → esecuzione
-
----
-
-## Stato
-
-🟢 ATTIVO — sviluppo controllato
+## Tipi di scambio supportati (concettualmente)
+- **Dato ↔ Dato**
+- **Diritto ↔ Diritto**
+- **Valore ↔ Valore**
+- **Decisione ↔ Costo** (decisione, costo, traccia, tempo)
 
 ---
 
-© Hermeticum B.C.E. — Manuel Coletta
-# MetaExchange — Proof Registry
-
-> **Decidi, e paghi la traccia per rimanere nel tempo.**
-
-Questo repository costituisce il **registro pubblico delle prove di pagamento**
-dell’ecosistema **Hermeticum B.C.E.**.
-
-MetaExchange separa in modo rigoroso:
-- **identità** (IPR-Personale)
-- **pagamento** (off-chain)
-- **prova** (pubblica e verificabile)
+## Componenti del layer
+MetaExchange si compone di:
+- **schema di scambio** (struttura minima dei record)
+- **integrità** (hash/checksum)
+- **tempo** (timestamp e continuità)
+- **verifica** (policy e validazioni)
 
 ---
 
-## Scopo del repository
-
-Il **Proof Registry** esiste per:
-- rendere **verificabile** l’avvenuto pagamento di un servizio
-- mantenere **traccia storica nel tempo**
-- consentire **audit indipendente**
-- evitare qualsiasi esposizione di dati sensibili
-
-👉 Questo repository **NON** gestisce pagamenti.  
-👉 Questo repository **NON** contiene IBAN, wallet o dati personali.
-
-Contiene **solo prove**.
+## Relazione con gli altri nodi
+- **OPC** → definisce le condizioni e policy dello scambio
+- **UNEBDO** → produce/ancora evidenze e verifiche
+- **GitJoker (AIJOKER-C2)** → abilita workflow operativi su Git con IPR
+- **Registro UE IPR** → identifica titolari e continuità
 
 ---
 
-## Cosa è pubblico (e cosa no)
-
-### Pubblico (su Git)
-- ORDER-ID
-- riferimento a IPR-ID (o pseudonimo)
-- tipo di servizio
-- importo e valuta
-- metodo (IBAN / CRYPTO)
-- stato del pagamento
-- hash della ricevuta
-- timestamp
-
-### Privato (off-chain)
-- IBAN
-- wallet address
-- ricevuta completa
-- dati bancari o fiscali
-- documenti di identità
+## Ambito UE
+MetaExchange è progettato in coerenza con:
+- **Horizon Europe** (governance, evidenze, maturità progettuale)
+- **AI Act UE** (logging, accountability, controllo umano)
+- **NIS2 / CER** (auditabilità e prevenzione incidenti)
+- **eIDAS / ETSI** (integrità e continuità temporale delle evidenze)
 
 ---
 
-## Struttura del repository
-
-Ogni file in `records/` rappresenta **un pagamento**
-e viene aggiunto con **commit dedicato**.
+## Stato del progetto
+- **Stato:** ATTIVO — nodo in costruzione controllata
+- **Categoria:** Exchange Layer / Traceability
+- **Livello:** UE-ready / Horizon-compatible (sperimentale)
 
 ---
 
-## Schema di un record di prova
+## Link
+- MetaExchange (pagina pubblica): https://manuelcoletta1-source.github.io/metaexchange/
+- OPC: https://manuelcoletta1-source.github.io/opc/
+- UNEBDO: https://manuelcoletta1-source.github.io/unebdo/
+- GitJoker: https://manuelcoletta1-source.github.io/gitjoker-c2/
+- Registro UE IPR: https://manuelcoletta1-source.github.io/ue-ipr-registry/
 
-Ogni record deve rispettare lo schema definito in `SCHEMA.md`.
+---
 
-Esempio semplificato:
-
-```md
-- ORDER-ID: ORDER-20260308-0001
-- IPR-ID: IPR-XXXX
-- SERVICE-TYPE: IPR_INIT
-- AMOUNT: 390
-- CURRENCY: EUR
-- METHOD: IBAN
-- STATUS: PAID
-- RECEIPT-HASH: sha256:____________________
-- TIMESTAMP: 2026-03-08T10:15:00Z
+© HERMETICUM B.C.E. S.r.l. — Manuel Coletta  
+MetaExchange · Tracked Exchange Layer
