@@ -1,98 +1,142 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>MetaExchange — Hermeticum B.C.E.</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MetaExchange — Tracked Exchange Layer (UE)</title>
+  <meta name="description" content="MetaExchange è il layer di scambio tracciato dell’ecosistema Hermeticum B.C.E.: registra interazioni, trasferimenti e passaggi di valore rendendoli verificabili nel tempo. UE / Horizon-compatible." />
+  <meta name="robots" content="index, follow" />
 
   <style>
-    body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#0b0b0b;color:#f2f2f2;line-height:1.6}
-    header{padding:44px 20px 26px;text-align:center;border-bottom:1px solid #333}
-    header h1{margin:0;font-size:2.1em;letter-spacing:1px}
-    header p{margin:10px 0 0;color:#aaa}
-    nav{margin:20px auto 0;max-width:1100px;padding:14px 12px;border:1px solid #333;border-radius:12px;text-align:center}
-    nav a{color:#8fd3ff;text-decoration:none;margin:0 7px;white-space:nowrap}
-    nav a:hover{text-decoration:underline}
-    main{max-width:920px;margin:0 auto;padding:36px 20px 48px}
-    h2{border-left:4px solid #888;padding-left:10px;margin-top:38px}
-    ul{list-style:none;padding-left:0}
-    li{margin:10px 0}
-    .pill{display:inline-block;margin-left:8px;padding:2px 10px;border:1px solid #444;border-radius:999px;font-size:.85em;color:#bbb}
-    .box{border:1px solid #333;border-radius:12px;padding:14px 14px;margin-top:14px;background:#0e0e0e}
-    footer{padding:20px;text-align:center;font-size:.85em;color:#777;border-top:1px solid #333}
-    code{color:#d7ffb2}
+    :root { color-scheme: dark; }
+    body { margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; background:#0b0c10; color:#e8e8e8; }
+    header, main, footer { max-width: 1040px; margin: 0 auto; padding: 24px; }
+    .card { background:#0f1117; border:1px solid #24262b; border-radius:16px; padding:20px; margin-bottom:16px; }
+    h1 { margin:0 0 6px 0; font-size:30px; }
+    h2 { margin:22px 0 10px 0; font-size:20px; }
+    p { margin:8px 0; line-height:1.55; color:#cfd2d6; }
+    ul { margin:8px 0 8px 18px; color:#cfd2d6; }
+    li { margin:6px 0; }
+    a { color:#d6b8ff; text-decoration:none; }
+    a:hover { text-decoration:underline; }
+    .meta { font-size:13px; color:#9aa2aa; }
+    .tag { display:inline-block; padding:4px 10px; border:1px solid #24262b; border-radius:999px; font-size:12px; background:#0b0c10; color:#cfd2d6; margin-right:6px; margin-top:6px; }
+    .btn { display:inline-block; padding:10px 14px; border-radius:12px; border:1px solid #24262b; background:#0b0c10; margin:6px 6px 0 0; }
+    code { background:#0b0c10; border:1px solid #24262b; border-radius:8px; padding:2px 6px; }
+    .grid { display:grid; gap:16px; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
+    .rule { border-left: 4px solid #d6b8ff; padding-left: 12px; }
   </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "MetaExchange",
+    "description": "Layer di scambio tracciato: registra trasferimenti e interazioni rendendoli verificabili nel tempo (evidenza, hash, timestamp, policy).",
+    "applicationCategory": "SystemIntegration",
+    "operatingSystem": "Web",
+    "author": { "@type": "Organization", "name": "HERMETICUM B.C.E. S.r.l." }
+  }
+  </script>
 </head>
 
 <body>
 
 <header>
-  <h1>MetaExchange</h1>
-  <p>Layer di scambio tracciato — nodo BCE</p>
-  <p>Hermeticum B.C.E. (Blindata · Computabile · Evolutiva)</p>
-</header>
+  <div class="card">
+    <h1>MetaExchange</h1>
+    <p class="meta">Tracked Exchange Layer · Evidenza · Verifica · UE / Horizon</p>
 
-<nav aria-label="BCE Global Navigation">
-  <a href="/hermeticum-bce-services/">Services</a> |
-  <a href="/Hermeticum-B.C.E.-Technology/">Technology</a> |
-  <a href="/gitjoker-c2/">GitJoker-C2</a> |
-  <a href="/ue-ipr-registry/">UE IPR Registry</a> |
-  <a href="/esoterologia-edizioni-ipr5/">Esoterologia Edizioni</a> |
-  <a href="/corpus-esoterologia-ermetica/">Corpus</a> |
-  <a href="/apocalipsis/">Apocalipsis</a>
-</nav>
+    <div class="rule">
+      <p><strong>Funzione:</strong> MetaExchange registra scambi e interazioni (dati, diritti, valore, decisioni) in modo <strong>tracciabile e verificabile nel tempo</strong>.</p>
+      <p class="meta">Non è un “marketplace”. È un layer di scambio con prova tecnica (audit-ready).</p>
+    </div>
+
+    <div>
+      <span class="tag">Exchange Layer</span>
+      <span class="tag">Traceability</span>
+      <span class="tag">Audit Trail</span>
+      <span class="tag">UE-ready</span>
+      <span class="tag">Horizon-compatible</span>
+    </div>
+
+    <div>
+      <a class="btn" href="./README.md">README</a>
+      <a class="btn" href="https://github.com/manuelcoletta1-source/metaexchange">Repository</a>
+      <a class="btn" href="https://manuelcoletta1-source.github.io/ue-ipr-registry/">Registro UE IPR</a>
+      <a class="btn" href="https://manuelcoletta1-source.github.io/gitjoker-c2/">GitJoker</a>
+      <a class="btn" href="https://manuelcoletta1-source.github.io/opc/">OPC</a>
+      <a class="btn" href="https://manuelcoletta1-source.github.io/unebdo/">UNEBDO</a>
+    </div>
+  </div>
+</header>
 
 <main>
 
-  <h2>Cos’è MetaExchange</h2>
-  <p>
-    <strong>MetaExchange</strong> è il <strong>layer di scambio tracciato</strong> dell’ecosistema
-    Hermeticum B.C.E.: governa trasferimenti, interazioni e passaggi di valore
-    rendendoli verificabili, auditabili e opponibili.
-  </p>
-
-  <div class="box">
-    <strong>Funzione chiave</strong>
+  <section class="card">
+    <h2>Cosa scambia (tipi di scambio)</h2>
     <ul>
-      <li>• Tracciare ogni scambio (dato, valore, diritto)</li>
-      <li>• Collegare scambio → evidenza → tempo</li>
-      <li>• Rendere lo scambio verificabile e opponibile</li>
-      <li>• Integrare policy (OPC) e validità (UNEBDO)</li>
+      <li><strong>Dato ↔ Dato</strong> (con evidenza e integrità)</li>
+      <li><strong>Diritto ↔ Diritto</strong> (condizioni opponibili)</li>
+      <li><strong>Valore ↔ Valore</strong> (transazioni, quote, crediti, unità)</li>
+      <li><strong>Decisione ↔ Costo</strong> (accountability: decisione, costo, traccia, tempo)</li>
     </ul>
-  </div>
+    <p class="meta">
+      L’obiettivo non è “scambiare di più”: è scambiare con prova tecnica e continuità.
+    </p>
+  </section>
 
-  <h2>Tipologie di scambio</h2>
-  <ul>
-    <li>Dato ↔ dato <span class="pill">data</span></li>
-    <li>Diritto ↔ diritto <span class="pill">rights</span></li>
-    <li>Valore ↔ valore <span class="pill">value</span></li>
-    <li>Decisione ↔ costo <span class="pill">decision</span></li>
-  </ul>
+  <section class="card">
+    <h2>Componenti del layer</h2>
+    <div class="grid">
+      <div class="card" style="margin:0;">
+        <h2 style="margin-top:0;">Schema di scambio</h2>
+        <p>Definisce cosa viene scambiato, tra chi e con quali attributi minimi.</p>
+      </div>
+      <div class="card" style="margin:0;">
+        <h2 style="margin-top:0;">Integrità</h2>
+        <p>Hash e checksum per rendere lo scambio verificabile (offline se necessario).</p>
+      </div>
+      <div class="card" style="margin:0;">
+        <h2 style="margin-top:0;">Tempo</h2>
+        <p>Timestamp e continuità: lo scambio mantiene valore probatorio nel tempo.</p>
+      </div>
+      <div class="card" style="margin:0;">
+        <h2 style="margin-top:0;">Verifica</h2>
+        <p>Validazioni, controlli ex-ante e auditabilità (policy + evidenze).</p>
+      </div>
+    </div>
+  </section>
 
-  <h2>Componenti</h2>
-  <ul>
-    <li><strong>Exchange Schema</strong> <span class="pill">models</span></li>
-    <li><strong>Trace Layer</strong> <span class="pill">hash</span></li>
-    <li><strong>Timestamp Layer</strong> <span class="pill">time</span></li>
-    <li><strong>Verification Layer</strong> <span class="pill">audit</span></li>
-  </ul>
+  <section class="card">
+    <h2>Relazione con i nodi Hermeticum B.C.E.</h2>
+    <ul>
+      <li><strong>OPC</strong> → definisce le condizioni e policy dello scambio</li>
+      <li><strong>UNEBDO</strong> → produce/ancora evidenze e verifiche</li>
+      <li><strong>GitJoker (AIJOKER-C2)</strong> → abilita operazioni e workflow su Git con IPR</li>
+      <li><strong>Registro UE IPR</strong> → identifica titolari e continuità</li>
+    </ul>
+  </section>
 
-  <h2>Relazioni BCE</h2>
-  <ul>
-    <li><strong>UNEBDO</strong> → valida lo scambio</li>
-    <li><strong>OPC</strong> → rende opponibili le condizioni</li>
-    <li><strong>MetaExchange</strong> → registra e traccia</li>
-    <li><strong>GitJoker-C2</strong> → orchestra ed esegue</li>
-  </ul>
-
-  <h2>Stato</h2>
-  <p>🟢 <strong>ATTIVO</strong> — nodo in costruzione controllata</p>
+  <section class="card">
+    <h2>Allineamento UE</h2>
+    <ul>
+      <li><strong>Horizon Europe:</strong> scambio tracciato come evidenza di governance e maturità</li>
+      <li><strong>AI Act:</strong> accountability e logging per sistemi AI ad alto rischio</li>
+      <li><strong>NIS2 / CER:</strong> auditabilità e prevenzione incidenti/abusi nello scambio</li>
+      <li><strong>eIDAS / ETSI:</strong> integrità e continuità temporale delle evidenze</li>
+    </ul>
+  </section>
 
 </main>
 
 <footer>
-  © Hermeticum B.C.E. — Manuel Coletta<br/>
-  MetaExchange — Layer di scambio tracciato
+  <div class="card">
+    <p class="meta">
+      © 2026 — HERMETICUM B.C.E. S.r.l. — Manuel Coletta<br/>
+      MetaExchange · Tracked Exchange Layer (UE)
+    </p>
+  </div>
 </footer>
 
 </body>
