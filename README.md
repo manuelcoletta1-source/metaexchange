@@ -1,77 +1,98 @@
-# MetaExchange — Tracked Exchange Layer
-## Scambio tracciato · Evidenza · Verifica (UE / Horizon)
+# METAEXCHANGE
+## Scambio strutturato di dati, diritti e valore in Hermeticum B.C.E.
+
+**METAEXCHANGE** è il modulo di **interoperabilità e scambio strutturato**
+dell’ecosistema **Hermeticum B.C.E.**.
+
+Consente la **circolazione controllata di dati, diritti, licenze e valore**
+tra soggetti, sistemi e domini,
+solo in presenza di **IPR valido**, **policy UNEBDO applicabili**
+e **livelli di conformità verificati**.
+
+METAEXCHANGE non crea valore.
+**Rende il valore interoperabile e governabile.**
 
 ---
 
-## Cos’è MetaExchange
-**MetaExchange** è il layer di **scambio tracciato** dell’ecosistema **Hermeticum B.C.E.**  
-Registra e organizza scambi e interazioni rendendoli **verificabili nel tempo**.
+## Funzione
 
-MetaExchange **non è un marketplace**.  
-È un **layer tecnico** per collegare scambio → evidenza → tempo.
+METAEXCHANGE serve a:
 
----
+- abilitare interoperabilità tra domini differenti
+- scambiare dati e diritti in modo strutturato
+- applicare vincoli normativi allo scambio
+- garantire tracciabilità e audit delle transazioni
+- supportare integrazioni istituzionali ed enterprise
 
-## Perché serve
-Negli ecosistemi digitali complessi il problema non è solo “scambiare”, ma:
-- dimostrare condizioni e responsabilità
-- mantenere integrità e continuità
-- rendere lo scambio auditabile nel tempo
-
-MetaExchange esiste per evitare che lo scambio diventi
-un atto non verificabile o non opponibile.
+Senza METAEXCHANGE,
+lo scambio resta frammentato o opaco.
 
 ---
 
-## Tipi di scambio supportati (concettualmente)
-- **Dato ↔ Dato**
-- **Diritto ↔ Diritto**
-- **Valore ↔ Valore**
-- **Decisione ↔ Costo** (decisione, costo, traccia, tempo)
+## Cosa fa / Cosa non fa
+
+**Fa**
+- orchestra scambi basati su IPR valido
+- applica policy UNEBDO allo scambio
+- verifica livelli di conformità (IPR-COMPLY)
+- rende tracciabili dati e diritti scambiati
+- supporta modelli di licenza e interoperabilità
+
+**Non fa**
+- definizione dell’identità (→ IPR-CORE)
+- custodia documentale (→ IPR-VAULT)
+- controllo ex-ante delle azioni (→ IPR-GATE)
+- definizione delle policy (→ OPC)
+- orchestrazione C2 (→ GitJoker-C2)
 
 ---
 
-## Componenti del layer
-MetaExchange si compone di:
-- **schema di scambio** (struttura minima dei record)
-- **integrità** (hash/checksum)
-- **tempo** (timestamp e continuità)
-- **verifica** (policy e validazioni)
+## Posizione nello stack Hermeticum B.C.E.
+OPC (Policy) ↓ UNEBDO (Layer 0) ↓ IPR ↓ CORE · VAULT · TRACE · GATE · COMPLY ↓ METAEXCHANGE ↓ GitJoker-C2 / IPR-AIJOKER-C2
+METAEXCHANGE opera **solo** se:
+- l’IPR è valido
+- la conformità è sufficiente
+- le policy UNEBDO consentono lo scambio
+
+In caso contrario,
+**lo scambio è negato**.
 
 ---
 
-## Relazione con gli altri nodi
-- **OPC** → definisce le condizioni e policy dello scambio
-- **UNEBDO** → produce/ancora evidenze e verifiche
-- **GitJoker (AIJOKER-C2)** → abilita workflow operativi su Git con IPR
-- **Registro UE IPR** → identifica titolari e continuità
+## Principi operativi
+
+- **Interoperabilità governata**
+- **Conformità prima dello scambio**
+- **Tracciabilità obbligatoria**
+- **Audit-by-design**
+- **Fail-closed**
+
+Se non è verificabile,
+non è scambiabile.
 
 ---
 
-## Ambito UE
-MetaExchange è progettato in coerenza con:
-- **Horizon Europe** (governance, evidenze, maturità progettuale)
-- **AI Act UE** (logging, accountability, controllo umano)
-- **NIS2 / CER** (auditabilità e prevenzione incidenti)
-- **eIDAS / ETSI** (integrità e continuità temporale delle evidenze)
+## Destinatari
+
+- enti e istituzioni
+- sistemi enterprise
+- piattaforme di interoperabilità
+- architetti di ecosistemi digitali
 
 ---
 
-## Stato del progetto
-- **Stato:** ATTIVO — nodo in costruzione controllata
-- **Categoria:** Exchange Layer / Traceability
-- **Livello:** UE-ready / Horizon-compatible (sperimentale)
+## Autore
+
+**Manuel Coletta**
 
 ---
 
-## Link
-- MetaExchange (pagina pubblica): https://manuelcoletta1-source.github.io/metaexchange/
-- OPC: https://manuelcoletta1-source.github.io/opc/
-- UNEBDO: https://manuelcoletta1-source.github.io/unebdo/
-- GitJoker: https://manuelcoletta1-source.github.io/gitjoker-c2/
-- Registro UE IPR: https://manuelcoletta1-source.github.io/ue-ipr-registry/
+## Sigillo editoriale
+
+**Esoterologia Edizioni**
 
 ---
 
-© HERMETICUM B.C.E. S.r.l. — Manuel Coletta  
-MetaExchange · Tracked Exchange Layer
+## Stato
+
+🟢 **ATTIVO — Interoperabilità e scambio strutturato**
