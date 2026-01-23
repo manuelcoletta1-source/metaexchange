@@ -3,97 +3,83 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>METAEXCHANGE — Hermeticum B.C.E.</title>
-  <meta name="description" content="METAEXCHANGE: interoperabilità e scambio strutturato di dati, diritti e valore in Hermeticum B.C.E., basato su IPR, UNEBDO e conformità verificata." />
+  <title>METAEXCHANGE — Interoperabilità | Hermeticum B.C.E.</title>
+  <meta name="description" content="METAEXCHANGE: interoperabilità e scambio strutturato di dati, diritti e valore nell’ecosistema Hermeticum B.C.E., con IPR valido, policy UNEBDO e fail-closed." />
   <meta name="author" content="Manuel Coletta" />
   <meta name="publisher" content="Esoterologia Edizioni" />
   <style>
     :root { color-scheme: dark; }
-    body {
-      margin: 0;
+    body{
+      margin:0;
       font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-      background: #0b0c10;
-      color: #e8e8e8;
+      background:
+        radial-gradient(1200px 600px at 15% -10%, rgba(120,180,255,.18), transparent 55%),
+        #0b0c10;
+      color:#e8e8e8;
     }
-    header, main, footer {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 24px;
-    }
-    .card {
-      background: #0f1117;
+    header, main, footer { max-width: 1100px; margin: 0 auto; padding: 24px; }
+    .card{
+      background: rgba(15,17,23,.78);
       border: 1px solid #24262b;
       border-radius: 18px;
       padding: 22px;
       box-shadow: 0 12px 30px rgba(0,0,0,.35);
+      backdrop-filter: blur(10px);
     }
-    h1 { font-size: 30px; margin: 0 0 10px; }
-    h2 { font-size: 18px; font-weight: 600; opacity: .9; margin: 0 0 18px; }
-    h3 { font-size: 16px; margin-top: 0; }
-    p { line-height: 1.55; opacity: .95; }
-    .grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 16px;
-    }
-    @media (min-width: 900px) {
-      .grid { grid-template-columns: 1.2fr .8fr; }
-    }
-    .tag {
-      display: inline-block;
+    h1{ font-size: 30px; margin: 0 0 10px; }
+    h2{ font-size: 18px; font-weight: 650; opacity: .9; margin: 0 0 18px; }
+    h3{ font-size: 16px; margin: 0 0 10px; }
+    p{ line-height: 1.55; opacity: .95; margin: 10px 0; }
+    .muted{ opacity: .75; font-size: 13px; }
+    .tag{
+      display:inline-block;
       font-size: 12px;
       padding: 6px 10px;
       border-radius: 999px;
       border: 1px solid #2b2f38;
-      opacity: .85;
+      opacity: .9;
       margin-bottom: 12px;
     }
-    .btns {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-top: 16px;
-    }
-    .btn {
+    .grid{ display:grid; grid-template-columns: 1fr; gap: 14px; }
+    @media (min-width: 900px){ .grid{ grid-template-columns: 1fr 1fr; } }
+    .btns{ display:flex; gap:10px; flex-wrap:wrap; margin-top: 14px; }
+    .btn{
       border: 1px solid #2b2f38;
       border-radius: 12px;
       padding: 10px 14px;
-      background: #111420;
+      background: rgba(17,20,32,.85);
       color: #9bdcff;
       text-decoration: none;
       font-size: 14px;
     }
-    .btn:hover { text-decoration: underline; }
-    .muted { opacity: .75; font-size: 13px; }
-    footer { text-align: center; }
-    .mono {
-      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
-                   "Liberation Mono", "Courier New", monospace;
+    .btn:hover{ text-decoration: underline; }
+    .mono{
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono","Courier New", monospace;
     }
+    footer{ text-align:center; }
+    .sep{ height:1px; background:#24262b; margin: 14px 0; opacity:.9; }
   </style>
 </head>
 <body>
 
 <header>
   <div class="card">
-    <div class="tag">Interoperabilità</div>
+    <div class="tag">Interoperabilità · Scambio governato</div>
     <h1>METAEXCHANGE</h1>
-    <h2>Scambio strutturato · Hermeticum B.C.E.</h2>
+    <h2>Scambio strutturato di dati, diritti e valore</h2>
     <p>
-      METAEXCHANGE abilita la circolazione controllata di
-      <b>dati, diritti e valore</b> tra domini differenti,
-      basata su <b>IPR valido</b>, <b>policy UNEBDO</b>
-      e <b>conformità verificata</b>.
+      METAEXCHANGE abilita la circolazione governata di valore nell’ecosistema
+      Hermeticum B.C.E. Ogni scambio è ammesso solo se verificabile, conforme
+      e opponibile nel tempo.
     </p>
     <p class="muted">
-      Regola: <span class="mono">validità → conformità → interoperabilità</span>
+      Regola: <span class="mono">se non è conforme → non è scambiabile</span>
     </p>
     <div class="btns">
       <a class="btn" href="./README.md">README</a>
+      <a class="btn" href="https://github.com/manuelcoletta1-source/metaexchange">Apri Repo</a>
       <a class="btn" href="../unebdo/">UNEBDO</a>
-      <a class="btn" href="../opc/">OPC</a>
-      <a class="btn" href="../ipr-comply/">IPR-COMPLY</a>
-      <a class="btn" href="../gitjoker-c2/">GitJoker-C2</a>
+      <a class="btn" href="../hermeticum-bce-services/">Services HUB</a>
     </div>
   </div>
 </header>
@@ -101,23 +87,32 @@
 <main class="grid">
 
   <section class="card">
-    <h3>Ruolo architetturale</h3>
-    <p>
-      METAEXCHANGE è il punto di contatto
-      tra domini differenti:
-      istituzionale, enterprise, tecnico.
-    </p>
+    <h3>Ruolo nello stack</h3>
     <p class="muted">
-      Se non è governabile, non è interoperabile.
+      METAEXCHANGE opera solo dopo verifica di identità, policy e conformità.
+    </p>
+    <p class="mono">
+      OPC → UNEBDO → IPR → COMPLY → METAEXCHANGE → GitJoker-C2
+    </p>
+    <div class="sep"></div>
+    <p class="muted">
+      Ogni transazione genera evidenza auditabile e tracciabile nel tempo.
     </p>
   </section>
 
   <aside class="card">
-    <h3>Stato</h3>
+    <h3>Principi chiave</h3>
     <p class="muted">
-      🟢 ATTIVO<br/>
-      Modulo di interoperabilità e scambio strutturato.
+      • Interoperabilità governata<br/>
+      • Conformità prima dello scambio<br/>
+      • Tracciabilità obbligatoria<br/>
+      • Audit-by-design<br/>
+      • Fail-closed
     </p>
+    <div class="btns">
+      <a class="btn" href="../ipr-comply./">IPR-COMPLY</a>
+      <a class="btn" href="../ipr-gate/">IPR-GATE</a>
+    </div>
   </aside>
 
 </main>
